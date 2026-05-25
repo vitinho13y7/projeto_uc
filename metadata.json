@@ -1,0 +1,6 @@
+{
+  "name": "Migs Delícia - Doces e Salgados",
+  "description": "Landing page interativa e simulador de encomendas para a Migs Delícia, especializada em doces artesanais, mini tortas, bolos caseiros e salgados fritos fritos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

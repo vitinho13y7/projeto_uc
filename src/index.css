@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-outfit: "Outfit", sans-serif;
+  
+  --color-brand-cream: #FDF9F3;
+  --color-brand-gold: #E5B582;
+  --color-brand-pink: #FDF2F4;
+  --color-brand-pink-dark: #D98C8C;
+  --color-brand-brown: #4A3728;
+  --color-brand-chocolate: #342418;
+  
+  --color-artistic-bg: #FDF9F3;
+  --color-artistic-text: #4A3728;
+  --color-artistic-rose: #D98C8C;
+  --color-artistic-sage: #8C9D7E;
+  --color-artistic-gold: #E5B582;
+  --color-artistic-hover: #F9F1E8;
+}
+
+/* Custom general styling for confectionery visual consistency */
+body {
+  font-family: var(--font-sans);
+  background-color: #FDF9F3;
+  color: #4A3728;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5D5C5;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D2BEA9;
+}
+
+/* Custom blink anim and card effects */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(226, 149, 172, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(226, 149, 172, 0.7);
+  }
+}
+
+.pulsate-brand {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
